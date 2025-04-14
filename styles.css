@@ -1,0 +1,349 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #111;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #f76c6c;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/gym-hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 30px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+  }
+  
+  .hero p {
+    margin: 40px 0;
+    font-size: 1.8em;
+  }
+  
+  .btn {
+    background: #f76c6c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #f03f3f;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+    background: #f4f4f4;
+  }
+  
+  .feature-box {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  .feature-box h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  
+  /* About Section */
+.about {
+  padding: 60px 30px;
+  background: #fff;
+  color: #333;
+}
+
+.about .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  margin-top: 30px;
+  font-size: 1.8em;
+}
+
+.about p,
+.about ul {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.about ul {
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* Classes Section */
+.classes {
+  padding: 60px 30px;
+  background: #f9f9f9;
+}
+
+.classes .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.classes h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.class-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+.class-card h3 {
+  color: #f76c6c;
+  margin-bottom: 10px;
+}
+
+
+/* Trainers Section */
+.trainers {
+  padding: 60px 30px;
+  background: #fff;
+}
+
+.trainers .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.trainers h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.trainer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.trainer-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.trainer-card h3 {
+  margin-bottom: 5px;
+  color: #f76c6c;
+}
+
+
+/* Membership Section */
+.membership {
+  padding: 60px 30px;
+  background: #f4f4f4;
+}
+
+.membership .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.membership h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.plan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.plan-card {
+  background: white;
+  padding: 30px 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card h3 {
+  color: #f76c6c;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.plan-card .price {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.plan-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.plan-card ul li {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 60px 30px;
+  background: #fff;
+}
+
+.contact .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact h1 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 35px;
+}
+
+.contact-wrapper {
+  display:flex ;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 45%;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  resize: none;
+}
+
+.contact-form .btn {
+  background: #f76c6c;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.contact-form .btn:hover {
+  background: #e65c5c;
+}
